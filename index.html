@@ -5,14 +5,36 @@
     <title>Jared Arkin</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- load angular libraries -->
     <script src="js/libs/angular.js"></script>
     <script src="js/libs/angular-ui-router.js"></script>
+
+    <!-- load project's js files -->
+    <script src="js/app.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/HomeController.js"></script>
+    <script src="js/PortfolioController.js"></script>
+    <script src="js/ContactController.js"></script>
+
   </head>
   <body>
 
     <h1>Jared Arkin - Web Developer</h1>
+    <nav>
+      <ul>
+        <li>
+          <a ui-sref="home">Home</a>
+        </li>
+        <li>
+          <a ui-sref="portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a ui-sref="contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
 
-    <script src="js/app.js"></script>
-    <script src="js/config.js"></script>
+    <ui-view></ui-view>
+
   </body>
 </html>
