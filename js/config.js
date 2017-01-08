@@ -14,6 +14,14 @@ angular
         controller: 'PortfolioController as ctrl',
         template: `
           <p>{{ ctrl.viewName }}</p>
+          <div>
+            <ul>
+              <li ng-repeat="page in ctrl.allPages">
+                <p>{{ page.title }}:</p>
+                <p>{{ page.description }}</p>
+              </li>
+            </ul>
+          </div>
         `
       })
       .state('contact', {

@@ -1,5 +1,17 @@
-function PortfolioController () {
-  this.viewName = 'portfolio view';
+function PortfolioController (PortfolioService) {
+  var ctrl = this;
+  ctrl.viewName = 'portfolio view';
+
+  ctrl.allPages = [];
+  ctrl.getPages = function () {
+    PortfolioService
+      .getAllPages()
+      .then(function(response){
+        ctrl.allPages = response;
+      })
+  };
+
+  this.getPages();
 };
 
 angular
