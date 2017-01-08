@@ -5,6 +5,7 @@
     <title>Jared Arkin</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/styles.css">
+
     <!-- load angular libraries -->
     <script src="js/libs/angular.js"></script>
     <script src="js/libs/angular-ui-router.js"></script>
@@ -20,20 +21,22 @@
   </head>
   <body>
 
-    <h1>Jared Arkin - Web Developer</h1>
-    <nav>
-      <ul>
-        <li>
-          <a ui-sref="home">Home</a>
-        </li>
-        <li>
-          <a ui-sref="portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a ui-sref="contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
+    <div id="header">
+      <h1>Jared Arkin</h1>
+      <nav class="navbar">
+        <ul>
+          <li class="navlink">
+            <a ui-sref="home">Home</a>
+          </li>
+          <li class="navlink">
+            <a ui-sref="portfolio">Portfolio</a>
+          </li>
+          <li class="navlink">
+            <a ui-sref="contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
     <ui-view></ui-view>
 

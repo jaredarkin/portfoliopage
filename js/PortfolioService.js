@@ -8,7 +8,7 @@ function PortfolioService($http){
       }, function(reason){
         console.log(reason)
       });
-  }
+  };
 }
 
 angular
