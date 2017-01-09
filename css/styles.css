@@ -26,11 +26,20 @@ a:link, a:visited, a:hover, a:active {
   padding-left: 8em;
 }
 
-ul.homelinks {
+ul.homelinks, ul.contactlinks {
   padding-left: 0;
 }
 
-ul.homelinks li {
+ul.homelinks li, ul.contactlinks li {
   list-style-type: none;
   padding-bottom: 1em;
+}
+
+.portfoliothumb {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.thumbnail {
+  min-height: 500px;
 }

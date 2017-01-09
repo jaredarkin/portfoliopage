@@ -10,6 +10,7 @@ function PortfolioController (PortfolioService) {
       })
   };
 
+  this.getPages();
 };
 
 angular
