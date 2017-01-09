@@ -40,9 +40,8 @@ angular
       })
       .state('contact', {
         url: '/contact',
-        controller: 'ContactController as ctrl',
         template: `
-          <p>{{ ctrl.viewName }}</p>
+          <p>contact view</p>
         `
       });
       $urlRouterProvider.otherwise('/');
