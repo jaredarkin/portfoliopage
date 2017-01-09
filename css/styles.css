@@ -43,3 +43,7 @@ ul.homelinks li, ul.contactlinks li {
 .thumbnail {
   min-height: 600px;
 }
+
+#portfoliosearch {
+  width: 300px;
+}
