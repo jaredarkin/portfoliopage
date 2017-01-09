@@ -1,0 +1,14 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1>My Portfolio</h1>
+    <p>Code that I've worked on, am working on, and will work on.</p>
+  </div>
+</div>
+<div>
+  <ul>
+    <li ng-repeat="page in ctrl.allPages">
+      <p>{{ page.title }}:</p>
+      <p>{{ page.description }}</p>
+    </li>
+  </ul>
+</div>
