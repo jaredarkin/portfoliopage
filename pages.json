@@ -11,6 +11,25 @@
   },
   {
     "id": 2,
+    "title": "General Assembly Bootcamp",
+    "slug": "general-assembly",
+    "photoUrl": "/img/ga_logo_name.png",
+    "description": "General Assembly's Web Development Immersive program was an intense, but amazing, 12-week learning experience. I completed the program with a solid foundation of programming principles such as object oriented programming, MVC frameworks, and test driven development in both front end and back end languages.",
+    "url": "https://generalassemb.ly/",
+    "skills": ["Javascript", "JQuery", "HTML5", "CSS3", "AngularJS", "Ruby", "Rails", "node", "express", "pair programming", "UX", "OOP", "SQL", "Postgres", "Github", "API", "MVC"]
+  },
+  {
+    "id": 3,
+    "title": "Angular Portfolio Page",
+    "slug": "ng-portfolio",
+    "photoUrl": "/img/ng-portfolio-screenshot-large.png",
+    "description": "This portfolio website you're looking at was built with Angular. It's got a controller, a service, and multiple views. I am using ui-router to route between the various views/states.",
+    "url": "https://www.jaredarkin.com",
+    "github": "https://github.com/jaredarkin/portfoliopage",
+    "skills": ["AngularJS", "bootstrap", "JSON", "ui-router"]
+  },
+  {
+    "id": 4,
     "title": "Photos of Paul",
     "slug": "photos-of-paul",
     "photoUrl": "/img/photos-screenshot.jpg",
@@ -20,16 +39,17 @@
     "skills": ["Ruby on Rails", "Rails", "Ruby", "gems", "flexbox", "user authentication", "user authorization", "AWS", "Amazon Web Services"]
   },
   {
-    "id": 3,
-    "title": "UCI Wordpress Site",
-    "slug": "uci",
-    "photoUrl": "http://www.placebear.com/300/300",
-    "description": "A Wordpress redesign for the University of Chretiene in the Democratic Republic of Congo.",
-    "url": "https://uci-test.aredj.com",
-    "skills": ["Wordpress", "CMS"]
+    "id": 5,
+    "title": "Address Book",
+    "slug": "rails-address",
+    "photoUrl": "/img/address-screenshot-large.png",
+    "description": "This single page Ruby on Rails app uses Bootstrap Modals and AJAX calls to connect to the Rails backend without refreshing the page.",
+    "url": "https://codename-address.herokuapp.com",
+    "github": "https://github.com/jaredarkin/address_book",
+    "skills": ["Ruby on Rails", "Rails", "Ruby", "AJAX", "Bootstrap"]
   },
   {
-    "id": 4,
+    "id": 6,
     "title": "JQuery Memory Game",
     "slug": "memory",
     "photoUrl": "http://www.placebear.com/300/300",

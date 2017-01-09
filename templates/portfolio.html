@@ -19,8 +19,8 @@
         <p>{{ page.description }}</p>
         <p>Skills: {{ page.skills.join(", ") }}</p>
         <p>
-          <a ng-href="{{ page.url }}" class="btn btn-default" role="button">Website</a>
-          <a ng-href="{{ page.github }}" class="btn btn-default" role="button">Github Repo</a>
+          <a ng-if="page.url" ng-href="{{ page.url }}" class="btn btn-default" role="button">Website</a>
+          <a ng-if="page.github" ng-href="{{ page.github }}" class="btn btn-default" role="button">Github Repo</a>
         </p>
       </div>
     </div>
