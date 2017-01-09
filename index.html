@@ -4,6 +4,15 @@
     <meta charset="utf-8">
     <title>Jared Arkin</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <!--  Bootstrap and project stylesheet -->
+    <!-- load jQuery for Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- load angular libraries -->
@@ -21,22 +30,21 @@
   </head>
   <body>
 
-    <div id="header">
-      <h1>Jared Arkin</h1>
-      <nav class="navbar">
-        <ul>
-          <li class="navlink">
-            <a ui-sref="home">Home</a>
-          </li>
-          <li class="navlink">
-            <a ui-sref="portfolio">Portfolio</a>
-          </li>
-          <li class="navlink">
-            <a ui-sref="contact">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a ui-sref="home">Home</a>
+            </li>
+            <li>
+              <a ui-sref="portfolio">Portfolio</a>
+            </li>
+            <li>
+              <a ui-sref="contact">Contact</a>
+            </li>
+          </ul>
+      </div>
+    </nav>
 
     <ui-view></ui-view>
 
