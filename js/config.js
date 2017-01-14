@@ -18,11 +18,7 @@ angular
       .state('portfolio_detail', {
         url: '/portfolio/:id',
         controller: 'PageController as ctrl',
-        template: `
-          <h3>{{ ctrl.page.title }}</h3>
-          <p>{{ ctrl.page.description }}</p>
-          <p>Skills: {{ ctrl.page.skills.join(", ") }}</p>
-          `
+        templateUrl: '../templates/pageDetail.html'
       });
     $urlRouterProvider.otherwise('/');
   });

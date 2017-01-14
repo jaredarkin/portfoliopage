@@ -35,13 +35,22 @@ ul.homelinks li, ul.contactlinks li {
   padding-bottom: 1em;
 }
 
-.portfoliothumb {
+.portfolio {
+  padding-left: 9em;
+}
+
+.page-detail {
   padding-left: 2em;
   padding-right: 2em;
 }
 
-.thumbnail {
-  min-height: 600px;
+.page-detail-photo {
+  padding: 2em;
+  width: 100%;
+}
+
+.portfolio-back-button {
+  text-align: center;
 }
 
 #portfoliosearch {

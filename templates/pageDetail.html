@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-md-4">
+    <img class="page-detail-photo" ng-src="{{ ctrl.page.photoUrl }}" alt="...">
+  </div>
+  <div class="page-detail col-md-8">
+    <h3>{{ ctrl.page.title }}</h3>
+    <p>{{ ctrl.page.description }}</p>
+    <p>Skills Used: {{ ctrl.page.skills.join(", ") }}</p>
+    <p>
+      <a ng-if="ctrl.page.url" ng-href="{{ ctrl.page.url }}" class="btn btn-default" role="button">Website</a>
+      <a ng-if="ctrl.page.github" ng-href="{{ ctrl.page.github }}" class="btn btn-default" role="button">Github Repo</a>
+    </p>
+  </div>
+</div>
+<div class="portfolio-back-button">
+  <a ui-sref="portfolio" class="btn btn-sm btn-default" role="button">Back to Portfolio</a>
+</div>
