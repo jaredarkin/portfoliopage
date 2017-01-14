@@ -16,4 +16,4 @@ function PageController (PortfolioService, $stateParams) {
 
 angular
   .module('app')
-  .controller('PageController', PageController);
+  .controller('PageController', ['PortfolioService', '$stateParams', PageController]);

@@ -1,4 +1,4 @@
-function PortfolioService($http, $stateParams){
+function PortfolioService($http){
   var ctrl = this;
   var API = "../pages.json";
   ctrl.getAllPages = function(){
@@ -29,4 +29,4 @@ function PortfolioService($http, $stateParams){
 
 angular
   .module('app')
-  .service('PortfolioService', PortfolioService);
+  .service('PortfolioService', ['$http', PortfolioService]);

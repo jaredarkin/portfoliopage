@@ -1,4 +1,4 @@
-function PortfolioController (PortfolioService, $stateParams) {
+function PortfolioController (PortfolioService) {
   var ctrl = this;
 
   ctrl.allPages = [];
@@ -15,4 +15,4 @@ function PortfolioController (PortfolioService, $stateParams) {
 
 angular
   .module('app')
-  .controller('PortfolioController', PortfolioController);
+  .controller('PortfolioController', ['PortfolioService', PortfolioController]);
