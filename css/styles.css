@@ -26,11 +26,11 @@ a:link, a:visited, a:hover, a:active {
   padding-left: 8em;
 }
 
-ul.homelinks, ul.contactlinks {
+ul.homelinks, ul.contactlinks, ul.aboutlist {
   padding-left: 0;
 }
 
-ul.homelinks li, ul.contactlinks li {
+ul.homelinks li, ul.contactlinks li, ul.aboutlist li {
   list-style-type: none;
   padding-bottom: 1em;
 }
@@ -49,7 +49,8 @@ ul.homelinks li, ul.contactlinks li {
   width: 100%;
 }
 
-.portfolio-back-button {
+.back-to-button {
+  margin-top: 3em;
   text-align: center;
 }
 
