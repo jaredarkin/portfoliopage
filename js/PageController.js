@@ -6,7 +6,6 @@ function PageController (PortfolioService, $stateParams) {
     PortfolioService
       .getPageById($stateParams.id)
       .then(function(response) {
-        console.log(response);
         ctrl.page = response;
       });
   };

@@ -12,27 +12,15 @@ function PortfolioService($http, $stateParams){
   };
 
   ctrl.getPageById = function(id){
-    console.log(id + " getpagebyid");
     return ctrl.getAllPages()
       .then(function(response){
-        console.log(id + " in getallpages");
-        console.log(response);
         return ctrl.getById(response, id)
       })
   };
 
   ctrl.getById = function (arr, id) {
-    console.log("in getbyid function");
-    console.log(arr);
-    console.log(arr.length);
-    console.log(id);
-    console.log(arr[2].id);
     for (var d = 0, len = arr.length; d < len; d += 1) {
-      console.log("in for loop");
-      console.log(arr[d].id);
-      console.log(id);
         if (arr[d].id == id) {
-          console.log("match")
             return arr[d];
         }
     }
