@@ -28,7 +28,10 @@ function PortfolioService($http, $stateParams){
     console.log(id);
     console.log(arr[2].id);
     for (var d = 0, len = arr.length; d < len; d += 1) {
-        if (arr[d].id === id) {
+      console.log("in for loop");
+      console.log(arr[d].id);
+      console.log(id);
+        if (arr[d].id == id) {
           console.log("match")
             return arr[d];
         }

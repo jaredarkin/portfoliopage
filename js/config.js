@@ -19,9 +19,9 @@ angular
         url: '/portfolio/:id',
         controller: 'PageController as ctrl',
         template: `
-          <h3>{{ page.title }}</h3>
-          <p>{{ page.description }}</p>
-          <p>Skills: {{ page.skills.join(", ") }}</p>
+          <h3>{{ ctrl.page.title }}</h3>
+          <p>{{ ctrl.page.description }}</p>
+          <p>Skills: {{ ctrl.page.skills.join(", ") }}</p>
           `
       });
     $urlRouterProvider.otherwise('/');
