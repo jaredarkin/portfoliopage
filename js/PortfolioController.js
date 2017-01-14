@@ -1,4 +1,4 @@
-function PortfolioController (PortfolioService) {
+function PortfolioController (PortfolioService, $stateParams) {
   var ctrl = this;
 
   ctrl.allPages = [];
@@ -10,7 +10,7 @@ function PortfolioController (PortfolioService) {
       })
   };
 
-  this.getPages();
+  ctrl.getPages();
 };
 
 angular

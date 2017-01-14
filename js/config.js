@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
+  .config(function ($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -14,7 +14,15 @@ angular
       .state('contact', {
         url: '/contact',
         templateUrl: '../templates/contact.html'
+      })
+      .state('portfolio_detail', {
+        url: '/portfolio/:id',
+        controller: 'PageController as ctrl',
+        template: `
+          <h3>{{ page.title }}</h3>
+          <p>{{ page.description }}</p>
+          <p>Skills: {{ page.skills.join(", ") }}</p>
+          `
       });
     $urlRouterProvider.otherwise('/');
-    $locationProvider.html5Mode(true);  
   });

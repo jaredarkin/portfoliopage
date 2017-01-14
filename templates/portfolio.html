@@ -15,7 +15,7 @@
     <div class="thumbnail">
       <img ng-src="{{ page.photoUrl }}" alt="...">
       <div class="caption">
-        <h3>{{ page.title }}</h3>
+        <h3><a ui-sref="portfolio_detail({id: page.id })">{{ page.title }}<a/></h3>
         <p>{{ page.description }}</p>
         <p>Skills: {{ page.skills.join(", ") }}</p>
         <p>
