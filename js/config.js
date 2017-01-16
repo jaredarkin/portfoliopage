@@ -1,6 +1,6 @@
 angular
   .module('app')
-  .config(function ($stateProvider, $urlRouterProvider) {
+  .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
     $stateProvider
       .state('home', {
         url: '/',
@@ -25,4 +25,5 @@ angular
         templateUrl: '../templates/about.html'
       });
     $urlRouterProvider.otherwise('/');
+    $locationProvider.html5Mode(true);
   });
