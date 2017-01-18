@@ -57,3 +57,20 @@ ul.homelinks li, ul.contactlinks li, ul.aboutlist li {
 #portfoliosearch {
   width: 300px;
 }
+
+/* background images*/
+.home-page {
+  background: #000 url("../img/tree-peter-hershey.jpg") center center;
+}
+
+.contact-page {
+  background: #000 url("../img/bench-hal-trazo.jpg") center center;
+}
+
+.about-page {
+  background: #000 url("../img/frog-ray-hennessy.jpg") center center;
+}
+
+.portfolio-page, .detail-page {
+  background: #000 url("../img/vine-joel-peel.jpg") center center;
+}
