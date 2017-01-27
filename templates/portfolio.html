@@ -1,22 +1,20 @@
-<div class="jumbotron portfolio-page">
-  <div class="container">
-    <h1>My Portfolio</h1>
-    <p>Code that I've worked on, am working on, and will continue to work on.</p>
+<div class="container portfolio-page">
+    <h1 class="page-headline">My Portfolio</h1>
+    <p class="page-paragraph">Code that I've worked on, am working on, and will continue to work on.</p>
     <input
       type="text"
       id="portfoliosearch"
       placeholder="Search by skill (e.g. Angular, Rails, AWS)"
       ng-model="search">
-  </div>
 </div>
 
-<div class="portfolio">
+<div class="container portfolio">
   <div ng-repeat="page in ctrl.allPages | filter: {skills: search}">
-    <h3><a ui-sref="portfolio_detail({id: page.id })">{{ page.title }}<a/></h3>
+    <h3><a ui-sref="portfolio_detail({id: page.id })">{{ page.title }}</a></h3>
     <p>Skills Used: {{ page.skills.join(", ") }}</p>
   </div>
 </div>
 
-<div class="back-to-button">
-  <a ui-sref="home" class="btn btn-sm btn-default" role="button">Back to Homepage</a>
+<div class="button-container">
+  <a ui-sref="home" class="btn btn-sm btn-default back-to-button" role="button">Back to Homepage</a>
 </div>

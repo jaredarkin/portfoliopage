@@ -6,18 +6,17 @@
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <base href="/">
 
-    <!--  Bootstrap and project stylesheet -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/styles.css">
-
     <!-- load angular libraries -->
     <script src="js/libs/angular.js"></script>
     <script src="js/libs/angular-ui-router.js"></script>
     <script src="js/libs/ui-bootstrap-tpls-2.4.0.min.js"></script>
+
+    <!--  Bootstrap and project stylesheet -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
 
     <!-- load project's js files -->
     <script src="js/app.js"></script>
@@ -29,22 +28,28 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-default">
-      <h2>Jared Arkin - Web Developer</h2>
+    <div id="homeNavBar" class="navbar navbar-default">
       <div class="container-fluid">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a ui-sref="home">Home</a>
-            </li>
-            <li>
-              <a ui-sref="portfolio">Portfolio</a>
-            </li>
-            <li>
-              <a ui-sref="contact">Contact</a>
-            </li>
-          </ul>
+        <div class="navbar-header">
+          <button type="button" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" ui-sref="home">
+              <i class="icon-home"></i>
+              <span>Jared Arkin - Web Developer</span>
+          </a>
+        </div>
+        <div class="collapse navbar-collapse" ng-class="{'in': !navCollapsed}">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="home">Home</a></li>
+                <li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="portfolio">Portfolio</a></li>
+                <li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="contact">Contact</a></li>
+            </ul>
+        </div>
       </div>
-    </nav>
+    </div>
 
     <ui-view></ui-view>
 

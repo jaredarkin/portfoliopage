@@ -2,28 +2,40 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #f8f8ff;
-}
-
-.navbar-default, .jumbotron {
-  background-color: #f8f8ff;
+/* navbar styles */
+.navbar-default, .navbar {
+  background-color: hsl(201, 72%, 54%);
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: maroon;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: hsl(205, 87%, 40%);
+  color: white;
+}
+
+.navbar-default .navbar-brand {
+    color: white;
 }
 
 a {
   text-decoration: none;
 }
 
-a:link, a:visited, a:hover, a:active {
+/*a:link, a:visited, a:hover, a:active {
   color: maroon;
+}*/
+
+/* page header styles */
+.page-headline {
+  font-size: 6em;
+  color: hsl(205, 87%, 40%);
 }
 
-.jumbotron {
-  padding-left: 8em;
+.page-paragraph {
+  font-size: 2em;
 }
 
 ul.homelinks, ul.contactlinks, ul.aboutlist {
@@ -33,10 +45,11 @@ ul.homelinks, ul.contactlinks, ul.aboutlist {
 ul.homelinks li, ul.contactlinks li, ul.aboutlist li {
   list-style-type: none;
   padding-bottom: 1em;
+  font-size: 1.25em;
 }
 
-.portfolio {
-  padding-left: 9em;
+ul.homelinks li a, ul.contactlinks li a, ul.aboutlist li a{
+  color: hsl(201, 72%, 54%);
 }
 
 .page-detail {
@@ -49,9 +62,14 @@ ul.homelinks li, ul.contactlinks li, ul.aboutlist li {
   width: 100%;
 }
 
-.back-to-button {
+.button-container {
   margin-top: 3em;
   text-align: center;
+}
+
+.back-to-button {
+  color: white;
+  background-color: hsl(201, 72%, 54%);
 }
 
 #portfoliosearch {
@@ -59,7 +77,7 @@ ul.homelinks li, ul.contactlinks li, ul.aboutlist li {
 }
 
 /* background images*/
-.home-page {
+/*.home-page {
   background: #000 url("../img/tree-peter-hershey.jpg") center center;
 }
 
@@ -73,4 +91,4 @@ ul.homelinks li, ul.contactlinks li, ul.aboutlist li {
 
 .portfolio-page, .detail-page {
   background: #000 url("../img/vine-joel-peel.jpg") center center;
-}
+}*/
